@@ -7,5 +7,8 @@
   ],
   "scripts": {
     "build": "npm --workspace web run build && node -e \"require('node:fs').cpSync('web/dist', 'dist', { recursive: true })\""
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.62.0"
   }
 }
